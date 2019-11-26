@@ -1,0 +1,28 @@
+{
+  "name": "@wojtek1150/simple-charts",
+  "version": "1.0.1",
+  "description": "Simple css only charts built with Angular",
+  "main": "bundles/wojtek1150-simple-charts.umd.js",
+  "author": "Wojciech Parys",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wojtek1150/simple-charts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wojtek1150/simple-charts/issues"
+  },
+  "homepage": "https://github.com/wojtek1150/simple-charts#readme",
+  "module": "fesm5/wojtek1150-simple-charts.js",
+  "es2015": "fesm2015/wojtek1150-simple-charts.js",
+  "esm5": "esm5/wojtek1150-simple-charts.js",
+  "esm2015": "esm2015/wojtek1150-simple-charts.js",
+  "fesm5": "fesm5/wojtek1150-simple-charts.js",
+  "fesm2015": "fesm2015/wojtek1150-simple-charts.js",
+  "typings": "wojtek1150-simple-charts.d.ts",
+  "metadata": "wojtek1150-simple-charts.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

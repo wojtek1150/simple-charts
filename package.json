@@ -1,6 +1,6 @@
 {
   "name": "@wojtek1150/simple-charts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple css only charts built with Angular",
   "main": "src/index.js",
   "author": "Wojciech Parys",
