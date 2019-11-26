@@ -1,0 +1,4 @@
+<div class="pillar" *ngFor="let pillar of chart.pillars" [style.width]="pillar.width + '%'">
+  <div class="clip-path" [style.clip-path]="shape(pillar)"></div>
+  <div class="line" [style.clip-path]="line(pillar)"></div>
+</div>

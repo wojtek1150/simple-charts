@@ -1,0 +1,45 @@
+<div class="chart">
+
+  <div class="left axis-y">
+    <span *ngFor="let y of chart.scaleY">{{y}}</span>
+  </div>
+
+  <div class="lines">
+    <div class="line" *ngFor="let line of chart.lines">
+
+      <div class="segment {{line.lineType}}" *ngFor="let pillar of line.items">
+        <div class="shape" [style.clip-path]="segmentPath(pillar)"></div>
+        <div class="dot" [style.bottom]="dotLocation(pillar)">
+          <span>{{pillar.y}}{{line.valueType === 'percents' ? '%' : ''}}</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="grid">
+      <div class="column" *ngFor="let x of chart.scaleX">
+        <div class="row" *ngFor="let y of chart.scaleY"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right axis-y">
+    <span>100%</span>
+    <span>75%</span>
+    <span>50%</span>
+    <span>25%</span>
+  </div>
+
+  <div class="axis-x">
+    <span>&nbsp;</span>
+    <span *ngFor="let x of chart.scaleX">{{x}}</span>
+  </div>
+
+</div>
+
+<div class="legend">
+  <div class="item" *ngFor="let line of chart.lines">
+    <div class="icon {{line.lineType}}"></div>
+    {{line.label}}
+  </div>
+</div>
